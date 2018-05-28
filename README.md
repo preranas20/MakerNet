@@ -10,15 +10,15 @@ Social Web Application developed to connect Makers of Makerspace to the world. T
 ## Developing
 
 ### Technology Stack:
-#####UI/Front-end: Embedded Javascript(ejs) with Bootstrap framework 
-#####Middleware: Node.js and Express.js 
-Backend: MongoDB
+UI/Front-end: Embedded Javascript(ejs) with Bootstrap framework,
+Middleware: Node.js and Express.js,
+Backend: MongoDB,
 Data Transition format:JSON 
 
 ### Libraries/Packages:
-Session Management,Password Hashing and Authentication: Passport.js
-Timelines: Moments.js 
-Image Upload: Multer
+Session Management,Password Hashing and Authentication: Passport.js,
+Timelines: Moments.js, 
+Image Upload: Multer,
 Unit Testing: Mocha and Chai 
 
 
