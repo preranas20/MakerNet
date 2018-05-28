@@ -10,8 +10,8 @@ Social Web Application developed to connect Makers of Makerspace to the world. T
 ## Developing
 
 ### Technology Stack:
-UI/Front-end: Embedded Javascript(ejs) with Bootstrap framework 
-Middleware: Node.js and Express.js 
+#####UI/Front-end: Embedded Javascript(ejs) with Bootstrap framework 
+#####Middleware: Node.js and Express.js 
 Backend: MongoDB
 Data Transition format:JSON 
 
