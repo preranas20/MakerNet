@@ -1,0 +1,37 @@
+<% include ../partials/header %> 
+
+     <header class="jumbotron">
+         <div class="container">
+             <h1>Welcome To MakerNet !</h1>
+             <p>View artifacts from our community of makers from all over the world</p>
+             <p>
+                <a class="btn btn-primary btn-lg" href="/images/new">Add New Image</a>
+                <a class="btn btn-primary btn-lg" href="/posts/new">Add New Post</a>
+             </p>
+              <p>
+              <form action="/images" method="GET" class="form-inline" id="image-search">
+                <div class="form-group">
+                  <input type="text" name="search" placeholder="Image search..." class="form-control">
+                </div>
+              </form>
+             </p>
+         </div>
+     </header>
+     
+     <div class="row text-center flex-wrap" id="image-grid">
+        <% images.forEach(function(image){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                   <img src="<%= image.image %>">
+                   <div class="caption">
+                       <h4><%= image.name %></h4>
+                   </div>
+                   <p>
+                       <a href="/images/<%= image._id %>" class="btn btn-primary">More Info</a>
+                   </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+
+<% include ../partials/footer %>

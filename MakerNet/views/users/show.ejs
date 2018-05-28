@@ -1,0 +1,39 @@
+<% include ../partials/header %>
+
+<div class="row">
+	<div class="col-md-4">
+			<h1><%= user.firstName + " " + user.lastName %></h1>
+		<div class="thumbnail">
+			<img src="<%= user.avatar %>" alt="user profile image">
+			<div class="caption"><a href="mailto:<%= user.email %>"><%= user.email %></a></div>
+		</div>
+		
+	About Me:
+		<div><%=user.bio%></div>
+	
+	</div>
+	<div class="col-md-8">
+		<h3><%= user.username %>'s image gallery:</h3>
+		<ul>
+		<% images.forEach(function(image) { %>
+			<li><a href="/images/<%= image.id %>"><%= image.name %></a></li>
+		<% }); %>
+		</ul>
+	</div>
+	
+	
+	<div class="col-md-8">
+		<h3><%= user.username %>'s posts:</h3>
+		<ul>
+		<% posts.forEach(function(post) { %>
+			<li><a href="/posts/<%= post.id %>"><%= post.title %></a></li>
+		<% }); %>
+		</ul>
+	</div>
+	
+	
+	
+	
+</div>
+
+<% include ../partials/footer %>

@@ -1,0 +1,44 @@
+<% include ../partials/header %>
+    <div class="row">
+        <h1 style="text-align: center">Create a New Image</h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/images" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Name/Description</label>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Here's what I have been working on!">
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="image">Image Upload</label>
+                    <input class="form-control" type="text" name="image" id="image" placeholder="https://source.unsplash.com/TCCCKgdFmBo">
+                </div>
+               
+               <div class="form-group">
+               <h3>File Upload:</h3>
+Select a file to upload: <br />
+
+<input type="file" name="file" size="50" />
+<br />
+
+
+   </div>
+               
+               
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input class="form-control" type="text" name="location" id="location" placeholder="Charlotte, NC">
+                </div>
+                
+                
+                
+                <div class="form-group">
+                    
+                    <input type="submit" value="Upload File" />
+                </div>
+            </form>
+            <a href="/images">Go Back</a>
+        </div>
+    </div>
+<% include ../partials/footer %>
+
