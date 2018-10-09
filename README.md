@@ -1,6 +1,4 @@
-
-
-# MakerNetProfiles
+# MakerNet
 
 
 
@@ -11,16 +9,16 @@ Social Web Application developed to connect Makers of Makerspace to the world. T
 
 ## Developing
 
-### Technology Stack: <br />
-UI/Front-end: Embedded Javascript(ejs) with Bootstrap framework <br/ >
-Middleware: Node.js and Express.js <br/ >
-Backend: MongoDB <br/ >
-Data Transition format:JSON <br/ >
+### Technology Stack:
+UI/Front-end: Embedded Javascript(ejs) with Bootstrap framework,
+Middleware: Node.js and Express.js,
+Backend: MongoDB,
+Data Transition format:JSON 
 
-### Libraries/Packages: <br/ >
-Session Management,Password Hashing and Authentication: Passport.js <br/ >
-Timelines: Moments.js <br/ >
-Image Upload: Multer <br/ >
-Unit Testing: Mocha and Chai <br/ >
+### Libraries/Packages:
+Session Management,Password Hashing and Authentication: Passport.js,
+Timelines: Moments.js, 
+Image Upload: Multer,
+Unit Testing: Mocha and Chai 
 
 
